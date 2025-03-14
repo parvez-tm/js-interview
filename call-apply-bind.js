@@ -19,6 +19,7 @@ let obj2 = {
 
 // The call() method takes arguments separately.
 // The apply() method takes arguments as an array.
+// The bind() creates a refrence of the method and we can use it later
 
 console.log(obj.greet.call(obj2)) // we use call to borrow methods from another obj
 console.log(greet.call(obj2, "Dubai"))
