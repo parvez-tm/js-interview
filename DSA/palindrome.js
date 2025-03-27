@@ -6,7 +6,7 @@ String.prototype.reverse = function () {
     return reversedStr
 }
 
-let str = 'mammam'
+let str = '1000021'
 let b = str.reverse()
 
 // if(str == b){
@@ -20,18 +20,15 @@ let b = str.reverse()
 let left = 0
 let right = str.length - 1
 
-let result
+let result = 'Palindrome'
 while (left < right) {
-    if(str[left] == str[right]){
-        // console.log('Palindrome');
-        result = 'Palindrome'
-    }else{
-        // console.log('Not Palindrome');
+    if(str[left] != str[right]){
         result = 'Not Palindrome'
+        break
     }
-    console.log(left,right);
     left ++
     right --
 }
+
 
 console.log(result);
