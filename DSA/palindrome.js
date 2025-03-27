@@ -32,3 +32,18 @@ while (left < right) {
 
 
 console.log(result);
+
+// Just for numbers 
+var isPalindrome = function(x) {
+    
+    let xCopy = x
+    let output = 0
+    while(xCopy > 0){
+        output = (output  * 10) + (xCopy % 10)
+        xCopy = Math.floor(xCopy / 10)
+    }
+
+    return output === x
+};
+
+console.log(isPalindrome(10001))
