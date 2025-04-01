@@ -8,5 +8,25 @@ function factorialLoop(num){
     return a
 }
 
-let b = factorialLoop(-5)
-console.log(b,"Ad");
+// let b = factorialLoop(-5)
+// console.log(b,"Ad");
+
+
+// My Mistake Solution
+let numb = 1
+function factorialRecursion(num){
+    if(num == 1) return numb
+        numb = numb * num
+        factorialRecursion(num -1)
+
+    return numb
+
+}
+
+function resolvedMistake(num){
+    if(num == 1) return 1
+    return num * resolvedMistake(num-1)
+}
+
+let a = resolvedMistake(5)
+console.log(a,"afa");
