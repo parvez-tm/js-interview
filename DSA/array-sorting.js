@@ -27,3 +27,15 @@ for (let i = 0; i < a.length; i++) {
 }
 
 console.log(a);
+
+// Brute Force Method in which the loop is n*n
+let temp
+for (var j = 0; j < a.length; j++) {
+for (let i = 0; i < a.length-1; i++) {
+  if(a[i + 1] > a[i]){ // Change the sign to revese the sorting
+    temp = a[i + 1]
+    a[i + 1] = a[i]
+    a[i] = temp
+  }
+}
+}
