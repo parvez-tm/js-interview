@@ -37,3 +37,11 @@ function secondLargest(arr) {
 }
 console.log(secondLargest(a))
 // console.log(a,"Hello, World!");
+
+
+// Infinity Introduction for the first time for me
+console.log(1 / 0);          // → Infinity
+console.log(-1 / 0);         // → -Infinity
+console.log(Infinity > 9999999999); // → true
+console.log(Infinity + 1);   // → Infinity
+console.log(Infinity - Infinity); // → NaN
