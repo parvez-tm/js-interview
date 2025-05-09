@@ -66,5 +66,26 @@ function insertend(list, tail){
     }
   }
 }
-// insertend(head,newNode)
-console.log(head)
+insertend(head,newNode)
+// console.log(head)
+
+// Insert at index 
+let index = 1
+let name = new node('ptm')
+function insertIndex(list, name, index){
+  // console.log(name,"ad");
+  for (const key in list) {
+
+    console.log(head[key]);
+  }
+}
+
+function traverse(list){
+  console.log(list.data);
+  if(list.next != null){
+    traverse(list.next)
+  }
+}
+traverse(head)
+
+// insertIndex(head, name, index)
