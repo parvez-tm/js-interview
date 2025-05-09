@@ -41,11 +41,30 @@ class Node {
 // console.log(a)
 
 // function base node 
-function node(data){
+function node(data, next = null){
   // console.log(data,"ad");
-  // this.data = data
-  return data
+  this.data = data
+  this.next = next
 }
 
+
 let head = new node(45)
-console.log(head,"d");
+let ele = new node(25)
+head.next = ele
+let newNode = new node(35)
+
+// Insert at Start 
+// newNode.next = head
+// head = newNode
+// console.log(head)
+
+// Insert at end 
+function insertend(list, tail){
+  for (const key in list) {
+    if (list[key].next == null) {
+      list[key].next = tail
+    }
+  }
+}
+// insertend(head,newNode)
+console.log(head)
