@@ -8,6 +8,14 @@
   // 2) start from 1
 
 
+// Normal Function: 
+    // Used to perform a task or return a value.
+    // this refers to the calling context (e.g., window or undefined in strict mode).
+// Constructor Function: 
+    // Used to create and initialize objects.
+    // this refers to the newly created object.
+
+
 // Starting with minimal example
 const n1 = {
     data: 100
@@ -29,5 +37,15 @@ class Node {
     }
   }
   
-let a = new Node(200)
-console.log(a)
+// let a = new Node(200)
+// console.log(a)
+
+// function base node 
+function node(data){
+  // console.log(data,"ad");
+  // this.data = data
+  return data
+}
+
+let head = new node(45)
+console.log(head,"d");
