@@ -73,11 +73,19 @@ insertend(head,newNode)
 let index = 1
 let name = new node('ptm')
 function insertIndex(list, name, index){
-  // console.log(name,"ad");
+  let counter = 0
   for (const key in list) {
-
+    if(counter == index){
+      // let d = structuredClone(head[key])
+      // head[key].next = name
+      // head[key].data.next = head[key].next
+      // delete head[key].next
+      // return
+    }
     console.log(head[key]);
+    counter++
   }
+  // console.log(head);
 }
 
 function traverse(list){
@@ -86,6 +94,6 @@ function traverse(list){
     traverse(list.next)
   }
 }
-traverse(head)
+// traverse(head)
 
-// insertIndex(head, name, index)
+insertIndex(head, name, index)
