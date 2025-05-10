@@ -17,9 +17,13 @@ for (let i = 0; i < a.length; i++) {
     for (let j = i; j < a.length; j++) {
         console.log(f++);
         if(a[i] > a[j] && a[i] != a[j]){ // Change the sign to revese the sorting
-            b = a[i]
-            a[i] = a[j] 
-            a[j] = b
+          // For beginner 
+            // b = a[i]
+            // a[i] = a[j] 
+            // a[j] = b
+
+          // After some research
+          [a[i], a[j]] = [a[j], a[i]]
         }
         // return
     }
