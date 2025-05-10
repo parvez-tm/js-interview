@@ -66,24 +66,25 @@ function insertend(list, tail){
     }
   }
 }
-insertend(head,newNode)
+// insertend(head,newNode)
 // console.log(head)
 
 // Insert at index 
 let index = 1
 let name = new node('ptm')
-function insertIndex(list, name, index){
+function insertIndex(list, name, i){
   let counter = 0
   for (const key in list) {
-    if(counter == index){
-      // let d = structuredClone(head[key])
-      // head[key].next = name
-      // head[key].data.next = head[key].next
-      // delete head[key].next
+    console.log(list[key],"d");
+    // if(counter == (i-1)){
+    //   let d = list[key]
+      // list[key].data = name.data
+      // list[key].next = name
+      // list[key].next.next = d
       // return
-    }
-    console.log(head[key]);
-    counter++
+      // console.log(list[key]);
+    // }
+    // counter++
   }
   // console.log(head);
 }
